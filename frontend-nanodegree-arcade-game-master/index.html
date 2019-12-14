@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="header">
+                <h1>ARCADE GAME</h1>
+         </div>
+                  <div class="guide">
+                      <h1 >Guide</h1>
+                      <ul>
+                          <li>If player collison moer 3 Once loss </li>
+                          <li>If player Arrived in the water area is Winner .. </li>
+                      </ul>
+                  </div>
+                <!-- modal for when player looses all lives -->
+                <div class="game-over">
+                    <p>Oops you lost all 3 lives</p>
+                    <h3>Try to Play again to win</h3>
+                    <button onclick="resetGame()"> Play Again </button>
+                </div>
+            <!--  player wins the game -->
+            <div class="win">
+                <h1>Congratulations you are a winner </h1>
+                <button onclick="resetGame()"> Play Again </button>
+            </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
